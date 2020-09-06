@@ -28,60 +28,86 @@ public class MapGenerator
         map[r][c] = value;
     }
 
-    public void draw(Graphics2D g) {
+    public void draw(Graphics2D g)
+    {
         // first row
-        for (int i = 0; i < 1; i++) {
-            for (int j = 2; j < map[0].length - 2; j++) {
+        for (int i = 0; i < 1; i++)
+        {
+            for (int j = 2; j < map[0].length - 2; j++)
+            {
                 if (map[i][j] > 0) {
                     g.setColor(Color.red);
                     g.fillRoundRect(j * brickwidth + 80, i * brickheight + 50, brickwidth, brickheight, 20, 20);
 
                     g.setColor(Color.black);
                     g.setStroke(new BasicStroke(3));
-                    g.drawRoundRect(j * brickwidth + 80, i * brickheight + 50, brickwidth, brickheight, 20, 20); } } }
+                    g.drawRoundRect(j * brickwidth + 80, i * brickheight + 50, brickwidth, brickheight, 20, 20);
+                }
+            }
+        }
 
         // second row
-        for (int i = 1; i < 2; i++) {
-            for (int j = 1; j <map[0].length - 1; j++) {
+        for (int i = 1; i < 2; i++) 
+        {
+            for (int j = 1; j <map[0].length - 1; j++) 
+            {
                 if(map[i][j]>0) {
                     g.setColor(Color.pink);
                     g.fillRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
 
                     g.setColor(Color.black);
                     g.setStroke(new BasicStroke(3));
-                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20); } } }
+                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
+                }
+            }
+        }
 
         // third row
-        for (int i = 2; i < 3; i++) {
-            for (int j = 0; j <map[0].length; j++) {
+        for (int i = 2; i < 3; i++)
+        {
+            for (int j = 0; j <map[0].length; j++)
+            {
                 if(map[i][j]>0) {
                     g.setColor(Color.orange);
                     g.fillRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
 
                     g.setColor(Color.black);
                     g.setStroke(new BasicStroke(3));
-                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20); } } }
+                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
+                }
+            }
+        }
 
         // fourth row
-        for (int i = 3; i < 4; i++) {
-            for (int j = 1; j <map[0].length - 1; j++) {
+        for (int i = 3; i < 4; i++) 
+        {
+            for (int j = 1; j <map[0].length - 1; j++) 
+            {
                 if(map[i][j]>0) {
                     g.setColor(Color.red);
                     g.fillRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
 
                     g.setColor(Color.black);
                     g.setStroke(new BasicStroke(3));
-                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20); } } }
+                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
+                }
+            }
+        }
 
         // fifth row
-        for (int i = 4; i < 5; i++) {
-            for (int j = 2; j <map[0].length - 2; j++) {
+        for (int i = 4; i < 5; i++)
+        {
+            for (int j = 2; j <map[0].length - 2; j++) 
+            {
                 if(map[i][j]>0) {
                     g.setColor(Color.green);
                     g.fillRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20);
 
                     g.setColor(Color.black);
                     g.setStroke(new BasicStroke(3));
-                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20); } } }
+                    g.drawRoundRect(j*brickwidth+80,i*brickheight+50,brickwidth,brickheight,20,20); 
+                } 
+            }
+        }
     }
 }
