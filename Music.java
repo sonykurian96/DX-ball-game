@@ -7,20 +7,25 @@ import java.io.File;
 
 public class Music
 {
+    
     void playmusic(String musiclocation)
     {
-        try{
-            File musicpath = new File(musiclocation);
-            if(musicpath.exists())
+            try
             {
-                AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicpath);
-                Clip clip = AudioSystem.getClip();
-                clip.open(audioInput);
-                clip.start();
+                File musicpath = new File(musiclocation);
+                if(musicpath.exists())
+                {
+                    AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicpath);
+                    Clip clip = AudioSystem.getClip();
+                    clip.open(audioInput);
+                    clip.start();
+                }
+            } 
+            catch (Exception e)
+            {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        
     }
 
 }
